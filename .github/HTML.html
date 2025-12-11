@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini application de calcul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini-calculatrice Dunamique</h1>
+    </header>
+    <main>
+        <section class="clac-section">
+            <h2>Calculatrice</h2>
+            <form id="calcForm">
+                <div class="form-group">
+                    <label for="a">nombre A</label>
+                    <input type="number" id="a" name="a">
+                </div>
+                <div class="form-proup">
+                    <label for="b">Nombre B</label>
+                    <input type="number" id="b" name="b">
+                </div>
+                <div class="form-group">
+                    <label for="op">opération</label>
+                    <select name="op" id="op">
+                        <option value="+">Addition (+)</option>
+                        <option value="-">Soustraction (-)</option>
+                        <option value="*">Multiplication (x)</option>
+                        <option value="/">Division (÷)</option>
+                    </select>
+                </div>
+                  <button type="submit" class="btn">Calculer</button>
+                  <p id="errorMsg" class="error"></p>
+                  <p id="result" class="result"></p>
+            </form>
+        </section>
+        <section class="history-section">
+            <h2>historique des opérations</h2>
+            <div id="history" class="history-card">
+                <ul id="historyList"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>TP 6 — Mini Application Web — 2024/2025</p>
+        <a href="info.php">Voir la page PHP</a>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
